@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaneDoe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="script.js" defer></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-navbar">
+            <h1>Profile</h1>
+            <ul class=nav-links>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
+        </div>
+        <div class="right-navbar">
+            <button class="signOut">Sign Out</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- this is our left column -->
+            <div class="col-1">
+                <div class="userCard">
+                    <div class="topbox">
+                        <img src="imgs-portfolio/jane-m.jpg" alt="avatar" class="avatar-1">
+                    </div>
+                    <div class="bottombox">
+                        <h1 id="janeDoe">Jane Doe</h1>
+                        <h3><img src="./imgs-icons/map-marker.png" alt="mapmarker" class="marker">Seattle</h3>
+                        <p>Developer | Engineer | Problem Solver <br>
+                        Master of shadows and the Inernet!</p>
+                        <p class="profile"><img src="./imgs-icons/gear.png" alt="gearicon" class="gearicon">
+                        <a href="#" onclick="changeName(this)" id="editProfile">edit profile</a></p>
+                    </div>
+                </div>
+                <div class="educateCard">
+                    <div class="ed-head">
+                        Education
+                    </div>
+                    <div class="bottombox">
+                        <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                        <p class="dates">Dec 2022 - Mar 2023</p>
+                        <p>Triple black belt in Python, MERN and C+</p>
+                        </div>
+                </div>
+            </div>
+            <!-- this is our right column -->
+            <div class="col-2">
+                <div class="requests">
+                    <div class="req-head">
+                        <span class="connections" id="reqCount">2</span>
+                        Connection Requests
+                    </div>
+                    <div class="req-botton">
+                        <div class="req-user">
+                            <div id="acceptDeclineBtn">
+                                <span class="begining">
+                                    <img src="./imgs-portfolio/todd-s.jpg" alt="todd" class="avatar-t">
+                                    <span>Todd E.</span>
+                                </span>
+                                <span class="end">
+                                    <button id="toddAccept" onclick="accept()" id="acceptProfile">
+                                        <img src="./imgs-icons/accept-circle.png" alt="accept" class="avatar-t">
+                                    </button>
+                                    <button id="toddDecline" onclick="decline()" id="declingProfile">
+                                        <img src="./imgs-icons/close-circle.png" alt="decline" class="avatar-t">
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="req-user">
+                            <div id="acceptDeclineBtn">
+                                <span class="begining">
+                                    <img src="./imgs-portfolio/phil-s.jpg" alt="phill" class="avatar-t">
+                                    <span>Phill K.</span>
+                                </span>
+                                <span class="end">
+                                    <button id="phillAccept" onclick="accept()" id="acceptProfile">
+                                        <img src="./imgs-icons/accept-circle.png" alt="accept" class="avatar-t">
+                                    </button>
+                                    <button id="phillDecline" onclick="decline()"id="declingProfile" >
+                                        <img src="./imgs-icons/close-circle.png" alt="decline" class="avatar-t">
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="yourConn">
+                    <div class="req-head">
+                        <span class="connections" id="connCount">500</span>
+                        Your Connections
+                    </div>
+                    <div class="req-botton">
+                        <div class="req-user">
+                            <span class="begining">
+                                <img src="./imgs-portfolio/adrien-s.jpg" alt="adrien" class="avatar-t">
+                                <span>Adrien D.</span>
+                            </span>
+                        </div>
+                        <div class="req-user">
+                            <span class="begining">
+                                <img src="./imgs-portfolio/alayne-s.jpg" alt="alayne" class="avatar-t">
+                                <span>Alayne J.</span>
+                            </span>
+                        </div>
+                        <div class="req-user">
+                            <span class="begining">
+                                <img src="./imgs-portfolio/anne-s.jpg" alt="anne" class="avatar-t">
+                                <span>Anne T.</span>
+                            </span>
+                        </div>
+                        <div class="req-user">
+                            <span class="begining">
+                                <img src="./imgs-portfolio/arry-s.jpg" alt="arry" class="avatar-t">
+                                <span>Arry T.</span>
+                            </span>
+                        </div>
+                        <div class="footer">
+                            <a href="#" class="view">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
